@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+ 
+<html>
+   <head>
+       <meta charset="utf-8">
+       <meta name="viewboard" content=width="device-width initial-scale=1">
+       <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+       <link href="css/styles.css" rel="stylesheet" type="text/css">
+       <script   src="js/jquery-3.4.1.js"></script>
+       <script src="js/scripts.js"></script>
+       <title>Edgy Pizza</title>
+   </head>
+   <body>
+       <div class="container-fluid text-white" id="logo">
+           <div class="row min-vh-100 text-center justify-content-center align-items-center flex-column" id="main-page">
+               <img src="img/logo.png" width="200px" height="200px">
+               <h1>EDGY<br>PIZZA PARLOR</h1> 
+               <p>Where eat is for you, what you want it to be!</p>
+           </div>
+       </div>  
+       <div class="container text-center" id="menu">
+           <h2>Our Pizzas</h2>
+           <div class="row no-gutters" id="delani-works">
+               <div class="col-md-4">
+                   <img src="img/greek.jpg" width="300px" height="200px" class="Neo" >
+                   <p>Greek Pizza</p>
+               </div>
+               <div class="col-md-4">
+                   <img src="img/sicilian.jpg" width="300px" height="200px" class="sic">
+                   <p>Sicilian Pizza</p>
+               </div>
+               <div class="col-md-4">
+                   <img src="img/detroit.jpg" width="300px" height="200px" class="det">
+                   <p>Detroit Pizza</p>
+               </div>
+           </div>
+       </div>
+       <div class="container text-center" id="order">
+           <form>
+               <h2>Order with us Today!</h2>
+               <img src="img/order.jpg" width="400px" height="400px">
+               <p>Select your Pizza size</p>
+               <select id="size">
+               <option value=""></option>
+               <option value="small">Small-KES.800</option>
+               <option value="Large">Large-KES.1200</option>
+               </select>
+               <p>Select your Pizza toppings</p>
+               <select class="toppings">
+               <option value=""></option>
+               <option value="Bacon">Bacon and ham-KES.400(large) and KES.200(small)</option>
+               <option value="pineapple">Pineapple and black olives-KES.200(large) and KES.100(small)</option>
+               <option  value="Sausage">Sausage and Bacon-KES.300(large) and KES.150(small)</option>
+               </select>
+               <p>Select your Pizza crust</p>
+               <select class="crust">
+               <option value=""></option>
+               <option value="GlutenFree">Gluten Free - KES 500(large) and KES.250(small)</option>
+               <option value="stuffed">Cheese Stuffed - KES 400(large) and KES.200(small)</option>
+               <option value="thin">Thin - KES 300(large) and KES.150(small)</option>
+               </select>
+               <p>How many pizzas do you want?</p>
+               <input type="number" class="number" min="1">
+               <br><br>
+               <button type="button" class="btn-default" id="calc">Place Order</button>
+           </form>
+       </div>
+       <div class="container text-center" id="end">
+           <p>Your orders can either be <strong>delivered</strong> or <strong>collected</strong> by you</p>
+           <div id="price">
+               <h3><u>YOUR COST</u></h3>
+               <p id="location"></p>
+               <p id="details"></p>
+           </div>
+           <p class="fin1">Eat Tested, Mom Approved</p>
+           <p class="fin">Edgy Pizza<br>2020</p>
+       </div>
+   </body>
+</html>
